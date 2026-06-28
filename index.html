@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wiki Diseño Visual</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+/* ================= BASE ================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Roboto',sans-serif;
+background:#ffffff;
+color:#111111;
+overflow-x:hidden;
+}
+
+/* ================= HEADER ================= */
+
+header{
+position:fixed;
+top:0;
+width:100%;
+z-index:1000;
+background:#E9E6FA;
+padding:15px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 3px 12px rgba(0,0,0,.12);
+}
+
+.logo h1{
+font-family:'Poppins';
+color:#6C4DD3;
+font-size:1.4rem;
+}
+
+.menu{
+display:flex;
+list-style:none;
+gap:10px;
+flex-wrap:wrap;
+}
+
+.menu a{
+text-decoration:none;
+color:#111;
+font-family:'Poppins';
+padding:8px 10px;
+border-radius:8px;
+transition:.3s;
+}
+
+.menu a:hover{
+background:#6C4DD3;
+color:#fff;
+}
+
+/* ================= PÁGINAS ================= */
+
+.page{
+position:absolute;
+top:0;
+left:100%;
+width:100%;
+min-height:100vh;
+padding:130px 8% 60px;
+opacity:0;
+transition:all .5s ease;
+}
+
+.page.active{
+left:0;
+opacity:1;
+position:relative;
+}
+
+/* ================= TEXTOS ================= */
+
+h1,h2{
+font-family:'Poppins';
+color:#6C4DD3;
+margin-bottom:20px;
+text-align:center;
+}
+
+p{
+text-align:justify;
+line-height:1.8;
+margin-bottom:15px;
+max-width:950px;
+margin-left:auto;
+margin-right:auto;
+}
+
+/* ================= CARDS ================= */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:20px;
+margin-top:25px;
+}
+
+.card{
+background:#fff;
+border:1px solid #D9D9E3;
+padding:22px;
+border-radius:15px;
+transition:.3s;
+text-align:justify;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.card h3{
+color:#6C4DD3;
+margin-bottom:10px;
+font-family:'Poppins';
+text-align:center;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+text-align:center;
+padding:30px;
+background:#E9E6FA;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo"><img src="imagenes/Logo_UVM_Rojo.svg.png" width="200" height="50" alt=""/>
+<h1>Wiki Diseño Visual</h1>
+</div>
+
+<ul class="menu">
+<li><a onclick="showPage('inicio')">Inicio</a></li>
+<li><a onclick="showPage('quees')">¿Qué es?</a></li>
+<li><a onclick="showPage('principios')">Principios</a></li>
+<li><a onclick="showPage('color')">Color</a></li>
+<li><a onclick="showPage('tipografia')">Tipografía</a></li>
+<li><a onclick="showPage('jerarquia')">Jerarquía</a></li>
+<li><a onclick="showPage('responsive')">Responsive</a></li>
+</ul>
+
+</header>
+
+<!-- ================= INICIO ================= -->
+
+<section id="inicio" class="page active">
+
+<h1>Bienvendi@&nbsp;</h1>
+
+<div style="text-align:center;">
+  <video width="800" controls>
+	<source src="videos/bienvenida.mp4" type="video/mp4"> 
+	Tu navegador no soporta el video. 
+</video>
+</div>
+
+<p>
+  El diseño visual es una disciplina del diseño digital que se encarga de la construcción de experiencias visuales a través del uso estratégico de elementos como el color, la tipografía, la composición, el contraste y la jerarquía visual. Su objetivo principal es comunicar información de manera clara, estética y funcional.
+</p>
+
+<p>
+En la actualidad, el diseño visual es fundamental en sitios web, aplicaciones móviles, interfaces digitales y redes sociales, ya que influye directamente en la experiencia del usuario y en la forma en que se percibe la información.
+</p>
+<h2>¿Cuáles son los pilares del Diseño Visual?</h2>
+	<div style="background:#E9E6FA; padding:25px; border-radius:15px; margin:25px auto; max-width:950px;">
+
+<p>
+Todo proyecto visual exitoso se apoya en elementos y principios que permiten comunicar mensajes de manera efectiva. Estos pilares constituyen la base sobre la que se construyen sitios web, aplicaciones, campañas publicitarias, marcas e interfaces digitales modernas.
+</p>
+	<div class="cards">
+
+<div class="card">
+<h3>Elementos Básicos</h3>
+<p>
+	
+  </p>
+<div><img src="imagenes/Copia de images.jpeg" width="200" height="200" alt="Foto"  style="display:block; margin:0 auto;"/></div>
+<p> El diseño visual se construye a partir de siete pilares fundamentales: línea, forma, espacio, textura, valor y color. Estos elementos son la materia prima de toda composición visual y permiten transmitir ideas de manera clara, atractiva y funcional. </p>
+</div>
+
+<div class="card">
+<h3>Principios de Composición</h3>
+<p>
+	
+  </p>
+<div><img src="imagenes/Logo.jpeg" width="200" height="200" alt="Foto" style="display:block; margin:0 auto;"/></div>
+<p>Los elementos visuales se organizan conscientemente mediante principios como la alineación, el contraste, la jerarquía, la repetición y la proximidad. Estas reglas ayudan a crear diseños equilibrados, ordenados y fáciles de comprender para el usuario.</p>
+</div>
+
+<div class="card">
+<h3>Objetivo del Diseño Visual</h3>
+<p>
+</p>
+<img src="imagenes/que-es-el-diseno-grafico.jpg" width="200" height="200" alt="Foto" style="display:block; margin:0 auto;"/>
+<p>Su principal objetivo es captar la atención del espectador, guiar su lectura visual y provocar una respuesta específica. Un buen diseño no solo comunica información, sino que también genera emociones, mejora la experiencia del usuario y fortalece el mensaje que se desea transmitir.</p>
+	
+</section>
+
+<!-- ================= QUE ES ================= -->
+
+<section id="quees" class="page">
+
+<h2>¿Qué es el Diseño Visual?</h2>
+	<div style="background:#E9E6FA; padding:25px; border-radius:15px; margin:25px auto; max-width:950px;">
+
+
+<p>
+El diseño visual es el área encargada de la representación gráfica de la información en medios digitales. No solo busca estética, sino también organización, claridad y comunicación efectiva.
+</p>
+
+<p>
+El diseño visual es una disciplina que combina arte, tecnología y comunicación para transmitir mensajes de forma clara, atractiva y efectiva. Utiliza elementos como la tipografía, el color, las imágenes y la composición para resolver problemas de comunicación visual.
+</p>
+
+<p>
+Su función principal es estructurar los elementos visuales para guiar la atención del usuario y mejorar la comprensión del contenido dentro de interfaces digitales.</p>
+				
+<img src="imagenes/image4.jpeg" width="478" height="252" alt=""/>
+	
+<div style="background:#D9D3F8; padding:25px; border-radius:20px; margin:25px auto; max-width:700px; text-align:center;">
+
+    <h3 style="color:#6C4DD3; margin-bottom:15px;">
+        Otras fuentes que puedes consultar
+    </h3>
+
+    <a href="https://blog.workana.com/freelanceando/los-5-contenidos-visuales-mas-populares-en-diseno-grafico/" target="_blank" style="color:#4A2EA5; font-size:22px; text-decoration:none; font-weight:bold;">
+        Los 5 contenidos visuales más populares en diseño gráfico
+    </a>
+
+</div>
+			
+</section>
+	
+
+<!-- ================= PRINCIPIOS ================= -->
+
+<section id="principios" class="page">
+
+<h2>Principios del Diseño Visual</h2>
+
+<p>
+Los principios del diseño visual son reglas fundamentales que permiten crear composiciones equilibradas, funcionales y visualmente coherentes.
+</p>
+
+<p>
+Los principios del diseño visual son las reglas fundamentales que guían la organización de elementos (líneas, formas, colores y texturas) para crear composiciones equilibradas, atractivas y funcionales. Dominar estos conceptos asegura que el mensaje se comunique con eficacia, mejorando notablemente la legibilidad y la experiencia del usuario.
+</p>
+	
+<img src="imagenes/mRtDEgfW-npzz423uYwxg5iQY2TRcr_9LYu7mB0c9iGeJzQzg4PSqz2nGcSJGVYOr2ljrSqJCh9bbTCiwoXCAPwvRxlFclqHqJOlhQUSf36Engw4LhgIUc2XcGBO-FC6rEqNU9-L9Z_tpsoimEy_QTjobCX0W4Y_QkUQSfuJSnQrMRo5FxWFgj7DU3owtuPO.jpeg" width="800" height="400" alt="Foto" style="display:block; margin:0 auto;"/>
+
+<div class="cards">
+
+<div class="card">
+<h3>Equilibrio</h3>
+<p>Distribución visual del peso en una composición.</p>
+</div>
+
+<div class="card">
+<h3>Contraste</h3>
+<p>Diferencias visuales que permiten destacar elementos importantes.</p>
+</div>
+
+<div class="card">
+<h3>Jerarquía</h3>
+<p>Organiza la información según su nivel de importancia visual.</p>
+</div>
+
+<div class="card">
+<h3>Alineación</h3>
+<p>Ordena elementos en ejes comunes para generar estructura.</p>
+</div>
+
+<div class="card">
+<h3>Repetición</h3>
+<p>Mantiene consistencia visual mediante patrones repetidos.</p>
+</div>
+
+<div class="card">
+<h3>Proximidad</h3>
+<p>Agrupa elementos relacionados para mejorar comprensión.</p>
+</div>
+
+<div class="card">
+<h3>Espacio en blanco</h3>
+<p>Área vacía que mejora la lectura y evita saturación visual.</p>
+</div>
+
+<div class="card">
+<h3>Énfasis</h3>
+<p>Punto focal que dirige la atención del usuario.</p>
+</div>
+	</div>
+	
+
+</section>
+
+<!-- ================= COLOR  ================= -->
+
+<section id="color" class="page">
+	<div style="background:#E9E6FA; padding:25px; border-radius:15px; margin:25px auto; max-width:1050px;">
+<h2>Teoría del Color</h2>
+	
+	<p>
+La teoría del color es un conjunto de reglas y principios fundamentales que explican cómo interactúan, se combinan y se perciben los colores. Es la base indispensable en disciplinas como el arte, el diseño gráfico, la pintura y la producción audiovisual para crear armonía, contraste y transmitir emociones. Gracias a estos conocimientos, los diseñadores pueden construir composiciones visuales atractivas, mejorar la comunicación de mensajes y generar experiencias más efectivas para los usuarios.
+</p>
+<img src="imagenes/teoriadelcolor.jpg" width="800" height="400" alt="Foto" style="display:block; margin:0 auto;"/>
+
+<div class="cards">
+  
+  <div class="card">
+<h3>Círculo Cromático</h3>
+<p>Base para crear paletas. Colores análogos y complementarios.</p>
+</div>
+
+<div class="card">
+<h3>Regla 60-30-10</h3>
+<p>60% dominante, 30% secundario, 10% acento.</p>
+</div>
+
+<div class="card">
+<h3>RGB</h3>
+<p>Colores en pantalla representados en hexadecimales.</p>
+</div>
+
+<div class="card"> 
+<h3>Psicología del Color</h3>
+<p>Rojo energía, azul confianza, verde naturaleza, amarillo atención.</p>
+</div>
+		</div>
+	
+	<div style="background:#E9E6FA; padding:25px; border-radius:15px; margin:25px auto; max-width:950px;">
+
+    <h3 style="text-align:center; color:#6C4DD3;">
+        Otras fuentes que puedes consultar
+    </h3>
+
+    <p style="text-align:center;">
+        <a href="https://www.aulacreactiva.com/teoria-del-color-diseno-grafico/" target="_blank">
+            Aula Creactiva – Teoría del color en diseño gráfico
+        </a>
+    </p>
+
+</div>
+	
+</section>
+
+<!-- ================= TIPOGRAFÍA  ================= -->
+
+<section id="tipografia" class="page">
+<h2>Tipografía</h2>
+<div style="text-align:center; margin:30px 0;">
+
+<video width="640" height="360" controls>
+    <source src="./videos/tipografia.mp4" type="video/mp4">
+    Tu navegador no soporta el video.
+</video>
+  
+</div>	
+  <p>
+La tipografía web es el diseño, estilo y disposición de los textos en un sitio de internet. No solo abarca la fuente elegida, sino también su tamaño, color, interlineado y jerarquía visual. Su objetivo principal es garantizar una lectura cómoda y transmitir la personalidad de la marca.
+</p>
+
+<div style="background:#E9E6FA; padding:25px; border-radius:15px; margin:25px auto; max-width:950px;">
+
+<h3 style="color:#6C4DD3; margin-bottom:15px; text-align:center;">
+Aspectos Fundamentales de la Tipografía
+</h3>
+
+<p>
+<strong>Familias tipográficas:</strong> Son los diseños principales de las fuentes, como las Serif (con remates), Sans-serif (sin remates) o Decorativas. Cada familia transmite diferentes sensaciones y estilos visuales.
+</p>
+
+<p>
+<strong>Jerarquía:</strong> Consiste en utilizar distintos tamaños, pesos y estilos tipográficos para diferenciar títulos, subtítulos y texto principal, facilitando la organización de la información.
+</p>
+
+<p>
+<strong>Legibilidad y espaciado:</strong> La separación entre líneas, palabras y letras debe estar optimizada para que el contenido sea fácil de leer en cualquier dispositivo y tamaño de pantalla.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>DaFont</h3>
+<p>Catálogo enorme de fuentes creativas organizadas por estilos.</p>
+</div>
+
+<div class="card">
+<h3>Google Fonts</h3>
+<p>Fuentes gratuitas, seguras y optimizadas para web.</p>
+</div>
+
+<div class="card">
+<h3>FontSpace</h3>
+<p>Fuentes gratuitas con opción de uso comercial.</p>
+</div>
+
+<div class="card">
+<h3>1001 Free Fonts</h3>
+<p>Más de 150,000 tipografías organizadas por categorías.</p>
+</div>
+
+<div class="card">
+<h3>Herramientas</h3>
+<p>Adobe Color y Figma ayudan a crear sistemas visuales profesionales.</p>
+</div>
+
+</div>
+</section>
+
+<!-- ================= JERARQUIA ================= -->
+<section id="jerarquia" class="page">
+
+<h2>Jerarquía Visual</h2>
+	
+<img src="imagenes/jerarquia.jpg" width="800" height="400" alt="Foto" style="display:block; margin:0 auto;"/>
+	
+<p>
+La jerarquía visual es un principio fundamental del diseño que consiste en organizar y priorizar los elementos de una composición para guiar la mirada del espectador. Establece un orden de lectura claro, permitiendo que el público identifique primero el mensaje principal antes de notar los detalles secundarios.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>Tamaño y escala</h3>
+<p>Lo más grande se percibe primero.</p>
+</div>
+
+<div class="card">
+<h3>Contraste</h3>
+<p>Permite destacar elementos importantes.</p>
+</div>
+
+<div class="card">
+<h3>Tipografía</h3>
+<p>Pesos y estilos ayudan a organizar información.</p>
+</div>
+
+<div class="card">
+<h3>Posición</h3>
+<p>La ubicación influye en la lectura visual.</p>
+</div>
+
+<div class="card">
+<h3>Espacio en blanco</h3>
+<p>Mejora la claridad y reduce saturación.</p>
+</div>
+
+<div class="card">
+<h3>Proximidad</h3>
+<p>Elementos relacionados se agrupan visualmente.</p>
+</div>
+
+</div>
+	
+	<div style="background:#E9E6FA; padding:25px; border-radius:15px; margin:25px auto; max-width:950px;">
+<a href="https://www.youtube.com/watch?v=kK1TOpI948o" target="_blank">
+    Otra fuente que puedes consultar
+</a>
+</div>	
+
+</section><!-- ================= JERARQUIA  ================= -->
+
+<section id="jerarquia" class="page">
+<h2>Jerarquía Visual</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Tamaño y escala</h3>
+<p>Lo más grande se percibe primero.</p>
+</div>
+
+<div class="card">
+<h3>Contraste</h3>
+<p>Permite destacar elementos importantes.</p>
+</div>
+
+<div class="card">
+<h3>Tipografía</h3>
+<p>Pesos y estilos ayudan a organizar información.</p>
+</div>
+
+<div class="card">
+<h3>Posición</h3>
+<p>La ubicación influye en la lectura visual.</p>
+</div>
+
+<div class="card">
+<h3>Espacio en blanco</h3>
+<p>Mejora la claridad y reduce saturación.</p>
+</div>
+
+<div class="card">
+<h3>Proximidad</h3>
+<p>Elementos relacionados se agrupan visualmente.</p>
+</div>
+</section>
+
+
+<!-- ================= RESPONSIVE  ================= -->
+<section id="responsive" class="page">
+
+    <h2>Diseño Responsive</h2>
+
+    <div style="text-align:center; margin:30px 0;">
+        <img src="imagenes/diseno-responsive-1200x630.original.jpg"
+             alt="Diseño Responsive"
+             width="900"
+             height="630">
+    </div>
+
+    <p>
+        El diseño web responsivo (Responsive Web Design o RWD) es una técnica de desarrollo que permite que una página web adapte automáticamente su diseño y contenido a cualquier dispositivo, ya sea una computadora, tableta o teléfono móvil. Gracias al uso de estructuras flexibles, imágenes adaptables y reglas CSS, se mejora la experiencia del usuario sin necesidad de crear diferentes versiones del mismo sitio.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Estructura fluida</h3>
+            <p>Los elementos se ajustan automáticamente al tamaño de la pantalla.</p>
+        </div>
+
+        <div class="card">
+            <h3>Media Queries</h3>
+            <p>Permiten aplicar diferentes estilos CSS según el dispositivo.</p>
+        </div>
+
+        <div class="card">
+            <h3>Imágenes flexibles</h3>
+            <p>Las imágenes cambian de tamaño sin deformarse ni afectar el diseño.</p>
+        </div>
+
+        <div class="card">
+            <h3>Experiencia táctil</h3>
+            <p>Optimiza la navegación para celulares y tabletas mediante botones y elementos fáciles de tocar.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!--  FOOTER -->
+
+<footer class="logo"><footer style=">
+
+			   
+background:#E9E6FA;
+padding:25px 10px;
+text-align:center;
+border-top:3px solid #6C4DD3;
+"
+
+</footer>
+<p style="
+margin:0;
+font-family:'Poppins';
+font-weight:500;
+color:#111;
+text-align:center;
+">
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Wiki Diseño Visual © 2026 | Pareja 16 | </p>
+</footer>
+
+<script>
+function showPage(pageId){
+let pages=document.querySelectorAll('.page');
+pages.forEach(p=>p.classList.remove('active'));
+document.getElementById(pageId).classList.add('active');
+}
+</script>
+
+</body>
+</html>
